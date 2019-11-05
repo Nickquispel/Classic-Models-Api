@@ -1,6 +1,8 @@
 # Classic-models-api
 
 ## Installeren van de framework
+Omdat er gewerkt word met dockers moet je ook de api via nginx docker laten werken.
+
 https://api-platform.com/docs/distribution/#validating-data
 
 Bash:
@@ -8,6 +10,15 @@ Bash:
 * cd classic-models-api
 * composer create-project symfony/skeleton .
 * composer req api
+* cd ../webroot/
+* ln -s classic-models-api/public cmapi
+* cd /nano/hosts {cmapi.nql-72.at.xsar.us}
+
+Je url zal hierdoor als volgt zijn:
+cmapi.nql-72.at.xsar.us:8082/api
+
+je port kun je controleren op docker ps (nginx)
+Doordat je Magento en  api op de docker draaien kunnen deze elkaar benaderen.
 
 pas de .env file aan:
 DATABASE_URL=mysql://xsarus:xsarus@mysql57-2:3306/classicmodels
@@ -31,10 +42,6 @@ Deze klassen bevatten de variabelen, alleen niet de getters/setters. Deze kun je
 
 hiervoor heb je wel de de maker-bundle nodig:
 * composer require symfony/maker-bundle --dev
-
-Indien je een php server hebt gestart (* php -S localhost:8888 -t public/) kun je naar het volgende adres gaan:
-localhost:8888/api
-
 
 
 
