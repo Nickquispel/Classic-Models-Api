@@ -1,5 +1,7 @@
 # Classic-models-api
 
+https://api-platform.com/docs/core/controllers/ 
+
 ## Installeren van de framework
 Omdat er gewerkt word met dockers moet je ook de api via nginx docker laten werken.
 

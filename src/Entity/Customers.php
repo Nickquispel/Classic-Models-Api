@@ -3,14 +3,12 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use ApiPlatform\Core\Annotation\ApiResource;
 
 /**
  * Customers
  *
  * @ORM\Table(name="customers", indexes={@ORM\Index(name="salesRepEmployeeNumber", columns={"salesRepEmployeeNumber"})})
  * @ORM\Entity
- * @ApiResource
  */
 class Customers
 {
@@ -21,7 +19,7 @@ class Customers
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $customernumber = 0;
+    private $customernumber = '0';
 
     /**
      * @var string
