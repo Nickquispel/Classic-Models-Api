@@ -3,12 +3,14 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use ApiPlatform\Core\Annotation\ApiResource;
 
 /**
  * Productlines
  *
  * @ORM\Table(name="productlines")
  * @ORM\Entity
+ * @ApiResource
  */
 class Productlines
 {
