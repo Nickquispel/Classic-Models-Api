@@ -22,8 +22,7 @@ cmapi.nql-72.at.xsar.us:8082/api
 je port kun je controleren op docker ps (nginx)
 Doordat je Magento en  api op de docker draaien kunnen deze elkaar benaderen.
 
-pas de .env file aan:
-DATABASE_URL=mysql://xsarus:xsarus@mysql57-2:3306/classicmodels
+pas de .env file aan
 
 controleer of de verbinding met de datbase in orde is door de volgende bash commando te proberen:
 
